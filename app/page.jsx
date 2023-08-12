@@ -139,14 +139,14 @@ const HomePage = () => {
 </section>
 
         <section className="bg-white shadow-md rounded-lg p-8">
-          <h2 className="text-3xl font-semibold mb-6">Testimonials</h2>
+          <h2 className="text-3xl font-semibold mb-6 text-gray-800">Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-200 p-6 rounded-lg">
               <p className="text-gray-700">
                 "EduConnect has transformed the way I learn. The courses are comprehensive, and the instructors are amazing!"
               </p>
               <div className="flex items-center mt-4">
-                <img src="/testimonial-1.jpg" alt="Student" className="w-12 h-12 rounded-full mr-4" />
+                <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80" alt="Student" className="w-12 h-12 rounded-full mr-4" />
                 <div>
                   <p className="text-gray-600 font-semibold">Jane Doe</p>
                   <p className="text-gray-500">Business Analyst</p>
@@ -158,7 +158,7 @@ const HomePage = () => {
                 "I've taken several courses on EduConnect, and each one has been a valuable learning experience. Highly recommended!"
               </p>
               <div className="flex items-center mt-4">
-                <img src="/testimonial-2.jpg" alt="Student" className="w-12 h-12 rounded-full mr-4" />
+                <img src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Student" className="w-12 h-12 rounded-full mr-4" />
                 <div>
                   <p className="text-gray-600 font-semibold">John Smith</p>
                   <p className="text-gray-500">Software Engineer</p>
