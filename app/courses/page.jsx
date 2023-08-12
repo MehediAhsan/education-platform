@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+import { useState } from "react";
+import { FaSearch } from 'react-icons/fa';
 
 const CoursesPage = () => {
     const courses = [
@@ -19,18 +21,38 @@ const CoursesPage = () => {
         },
         // Add more courses
       ];
+      const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredCourses = courses.filter(course =>
+    course.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <div className="container mx-auto py-12">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
           Explore Our Courses
         </h1>
+        <div className="mb-8 flex justify-center">
+          <div className="relative w-full md:w-1/2">
+            <input
+              type="text"
+              placeholder="Search for courses..."
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+              className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 pl-10"
+            />
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <FaSearch className="text-gray-400" />
+            </div>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {courses.map((course, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transform transition-transform hover:scale-105"
-            >
-              <img
+          {filteredCourses.length > 0 ? (
+            filteredCourses.map((course, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transform transition-transform hover:scale-105"
+              >
+                <img
                 src={course.image}
                 alt={course.title}
                 className="w-full h-48 object-cover"
@@ -42,8 +64,13 @@ const CoursesPage = () => {
                   Learn More
                 </button>
               </div>
-            </div>
-          ))}
+              </div>
+            ))
+          ) : (
+            <p className="text-center text-gray-600">
+              No courses found matching your search.
+            </p>
+          )}
         </div>
       </div>
   )
