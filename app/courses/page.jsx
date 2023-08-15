@@ -31,19 +31,21 @@ const CoursesPage = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
           Explore Our Courses
         </h1>
-        <div className="mb-8 flex justify-center">
-          <div className="relative w-full md:w-1/2">
+        <div className="flex justify-center">
+        <div className="mb-8 flex justify-center items-center">
+          <div className="relative w-full">
             <input
               type="text"
               placeholder="Search for courses..."
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 pl-10"
+              className="w-96 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 pl-10 text-black"
             />
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <FaSearch className="text-gray-400" />
             </div>
           </div>
+        </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCourses.length > 0 ? (
@@ -58,7 +60,7 @@ const CoursesPage = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg md:text-xl font-semibold mb-2">{course.title}</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-700">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
                 <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
                   Learn More
