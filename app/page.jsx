@@ -1,7 +1,7 @@
 'use client';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
+import Link from "next/link"
 
 const HomePage = () => {
   const bannerSlides = [
@@ -56,7 +56,7 @@ const HomePage = () => {
                   {slide.description}
                 </p>
                 <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300">
-                  Explore Courses
+                  <Link href="/courses">Explore Courses</Link>
                 </button>
               </div>
             </div>
