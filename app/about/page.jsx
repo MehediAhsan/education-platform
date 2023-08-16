@@ -5,12 +5,12 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <div className="container mx-auto py-12">
-        <section className="bg-white shadow-md rounded-lg p-8">
-          <h1 className="text-4xl font-semibold mb-6 text-black">About EduConnect</h1>
-          <p className="text-gray-700 leading-relaxed">
+        <section className=" shadow-md rounded-lg p-8">
+          <h1 className="text-4xl font-semibold mb-6 text-white text-center">About EduConnect</h1>
+          <p className="text-gray-200 leading-relaxed">
             Welcome to EduConnect, your trusted online education platform. We are dedicated to delivering high-quality and accessible learning experiences to individuals around the world.
           </p>
-          <p className="text-gray-700 leading-relaxed mt-4">
+          <p className="text-gray-200 leading-relaxed mt-4">
             Our team of experienced educators and innovative technologists work together to provide a diverse range of courses across various subjects. We believe in the power of education to transform lives and drive positive change.
           </p>
         </section>
