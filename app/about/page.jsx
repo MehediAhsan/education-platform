@@ -15,7 +15,7 @@ const AboutPage = () => {
           </p>
         </section>
 
-        <section className="mt-8 bg-blue-500 text-white py-12 rounded-lg text-center">
+        <section className="mt-8 border border-blue-500 text-white p-12 rounded-lg text-center">
           <h2 className="text-3xl font-semibold mb-4">Our Mission</h2>
           <p className="text-lg leading-relaxed">
             We strive to make education accessible to everyone, breaking down barriers and enabling lifelong learning. Our mission is to empower individuals with knowledge and skills that lead to personal growth and success.
