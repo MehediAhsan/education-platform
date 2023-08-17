@@ -22,7 +22,7 @@ const AboutPage = () => {
           </p>
         </section>
 
-        <section className="mt-8 bg-gray-800 text-white py-12 rounded-lg text-center">
+        <section className="mt-8 border border-blue-800 text-white py-12 rounded-lg text-center">
           <h2 className="text-3xl font-semibold mb-4">Join Us Today</h2>
           <p className="text-lg leading-relaxed">
             Whether you're a student, professional, or simply curious, EduConnect has something for you. Join our community of learners and embark on a journey of discovery and achievement.

@@ -19,6 +19,21 @@ const CoursesPage = () => {
           description: 'Learn visual communication and design principles.',
           image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
         },
+        {
+          title: 'Mechine Learning',
+          description: 'Learn visual communication and design principles.',
+          image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+        },
+        {
+          title: 'Artificial Intelligence',
+          description: 'Learn visual communication and design principles.',
+          image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+        },
+        {
+          title: 'Database',
+          description: 'Learn visual communication and design principles.',
+          image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+        },
         // Add more courses
       ];
       const [searchTerm, setSearchTerm] = useState('');
@@ -47,7 +62,7 @@ const CoursesPage = () => {
           </div>
         </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredCourses.length > 0 ? (
             filteredCourses.map((course, index) => (
               <div
