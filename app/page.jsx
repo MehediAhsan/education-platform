@@ -87,7 +87,7 @@ const HomePage = () => {
       <main className="container mx-auto py-12">
         
 
-      <section className="bg-gray-800 text-white py-16 rounded-lg text-center mb-20">
+      <section className="border text-white py-16 rounded-lg text-center mb-20">
   <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">
     Why Choose EduConnect?
   </h2>
