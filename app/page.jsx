@@ -138,35 +138,59 @@ const HomePage = () => {
   </div>
 </section>
 
+<div className="container mx-auto py-12">
         <section className="bg-white shadow-md rounded-lg p-8">
-          <h2 className="text-3xl font-semibold mb-6 text-gray-800">Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-200 p-6 rounded-lg">
-              <p className="text-gray-700">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-gray-800 text-center">
+            What Our Students Say
+          </h2>
+          <Carousel
+            showStatus={false}
+            showIndicators={true}
+            showThumbs={false}
+            infiniteLoop
+            autoPlay
+            interval={5000}
+            stopOnHover={true}
+            swipeable={true}
+            emulateTouch={true}
+            dynamicHeight={false}
+            className="relative"
+          >
+            <div className="bg-gray-100 p-6 rounded-lg text-center flex justify-center item-center">
+              <p className="text-gray-700 text-lg md:text-xl w-96">
                 "EduConnect has transformed the way I learn. The courses are comprehensive, and the instructors are amazing!"
               </p>
-              <div className="flex items-center mt-4">
-                <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80" alt="Student" className="w-12 h-12 rounded-full mr-4" />
-                <div>
-                  <p className="text-gray-600 font-semibold">Jane Doe</p>
-                  <p className="text-gray-500">Business Analyst</p>
-                </div>
+              <div className="mt-6 w-28 h-28 ">
+                <img
+                  src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80"
+                  alt="Student"
+                  className="mx-auto rounded-full"
+                />
+                <p className="text-gray-600 font-semibold text-lg mt-2">
+                  Jane Doe
+                </p>
+                <p className="text-gray-500">Business Analyst</p>
               </div>
             </div>
-            <div className="bg-gray-200 p-6 rounded-lg">
-              <p className="text-gray-700">
+            <div className="bg-gray-100 p-6 rounded-lg text-center">
+              <p className="text-gray-700 text-lg md:text-xl">
                 "I've taken several courses on EduConnect, and each one has been a valuable learning experience. Highly recommended!"
               </p>
-              <div className="flex items-center mt-4">
-                <img src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Student" className="w-12 h-12 rounded-full mr-4" />
-                <div>
-                  <p className="text-gray-600 font-semibold">John Smith</p>
-                  <p className="text-gray-500">Software Engineer</p>
-                </div>
+              <div className="mt-6">
+                <img
+                  src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                  alt="Student"
+                  className="w-16 h-16 mx-auto rounded-full"
+                />
+                <p className="text-gray-600 font-semibold text-lg mt-2">
+                  John Smith
+                </p>
+                <p className="text-gray-500">Software Engineer</p>
               </div>
             </div>
-          </div>
+          </Carousel>
         </section>
+      </div>
       </main>
     </div>
   )
