@@ -156,16 +156,16 @@ const HomePage = () => {
             dynamicHeight={false}
             className="relative"
           >
-            <div className="bg-gray-100 p-6 rounded-lg text-center ">
+            <div className="bg-gray-100 p-6 rounded-lg text-center  w-96 mx-auto">
               <p className="text-gray-700 text-lg md:text-xl">
                 "EduConnect has transformed the way I learn. The courses are comprehensive, and the instructors are amazing!"
               </p>
               <div className='flex justify-center items-center'>
-              <div className="mt-6 w-20 h-20">
+              <div className="mt-6 w-48 h-48 pb-52">
                 <img
                   src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=721&q=80"
                   alt="Student"
-                  className="mx-auto rounded-full"
+                  className="mx-auto rounded"
                 />
                 <p className="text-gray-600 font-semibold text-lg mt-2">
                   Jane Doe
@@ -174,16 +174,16 @@ const HomePage = () => {
               </div>
               </div>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg text-center">
+            <div className="bg-gray-100 p-6 rounded-lg text-center w-96 mx-auto">
               <p className="text-gray-700 text-lg md:text-xl">
                 "I've taken several courses on EduConnect, and each one has been a valuable learning experience. Highly recommended!"
               </p>
               <div className='flex justify-center items-certer'>
-              <div className="mt-6 w-20 h-20">
+              <div className="mt-6 w-48 h-48  pb-52">
                 <img
                   src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
                   alt="Student"
-                  className=" mx-auto rounded-full"
+                  className=" mx-auto rounded"
                 />
                 <p className="text-gray-600 font-semibold text-lg mt-2">
                   John Smith
