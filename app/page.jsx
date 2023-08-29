@@ -39,6 +39,45 @@ const HomePage = () => {
       image: 'https://images.unsplash.com/photo-1536329583941-14287ec6fc4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80',
     },
   ];
+
+  const trainers = [
+    {
+      id:'1',
+      name: 'Rakibul',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+    {
+      id:'2',
+      name: 'Robiul',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+    {
+      id:'3',
+      name: 'Ataur',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+    {
+      id:'4',
+      name: 'Salman',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+    {
+      id:'5',
+      name: 'Pial',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+    {
+      id:'6',
+      name: 'Rakibul',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+  ]
   return (
     <div>
       
@@ -194,6 +233,15 @@ const HomePage = () => {
             </div>
           </Carousel>
         </section>
+      </div>
+
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto' >
+        {
+          trainers.map(trainer => <div className='flex flex-col justify-center items-center'>
+            <img src={trainer.img} alt="" className='w-52 h-44 rounded' />
+            <h1 className='text-2xl text-center'>{trainer.name}</h1>
+          </div>)
+        }
       </div>
       </main>
     </div>
