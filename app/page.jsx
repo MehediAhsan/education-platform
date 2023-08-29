@@ -77,6 +77,18 @@ const HomePage = () => {
       img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
       spacalist:'Data manager'
     },
+    {
+      id:'7',
+      name: 'Rakibul',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
+    {
+      id:'8',
+      name: 'Rakibul',
+      img: 'https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      spacalist:'Data manager'
+    },
   ]
   return (
     <div>
@@ -235,13 +247,16 @@ const HomePage = () => {
         </section>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto' >
+      <div className='mt-10'>
+        <h1 className='text-4xl text-center font-bold mb-10'>Our Trainers</h1>
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-10 container mx-auto' >
         {
-          trainers.map(trainer => <div className='flex flex-col justify-center items-center'>
-            <img src={trainer.img} alt="" className='w-52 h-44 rounded' />
-            <h1 className='text-2xl text-center'>{trainer.name}</h1>
+          trainers.map(trainer => <div className='w-52 h-44 mx-auto flex flex-col justify-center items-center border rounded'>
+            <img src={trainer.img} alt="" className='rounded' />
+            <h1 className='text-xl text-center py-1'>{trainer.name}</h1>
           </div>)
         }
+      </div>
       </div>
       </main>
     </div>
