@@ -1,29 +1,28 @@
-import Link from "next/link"
+'use client';
+import Link from "next/link";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="bg-blue-900 py-4 shadow-lg">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-semibold text-white">
-            EduConnect
+          <Link href="/" passHref legacyBehavior>
+            <a className="text-2xl font-semibold text-white">
+              EduConnect
+            </a>
           </Link>
-          <div className="hidden md:flex space-x-4">
-            <Link href="/" className="text-gray-300 hover:text-white">
-              Home
-            </Link>
-            <Link href="/courses" className="text-gray-300 hover:text-white">
-              Courses
-            </Link>
-            <Link href="/about" className="text-gray-300 hover:text-white">
-              About Us
-            </Link>
-            <Link href="/contact" className="text-gray-300 hover:text-white">
-              Contact Us
-            </Link>
-          </div>
           <div className="md:hidden">
-            <button className="text-white">
+            <button
+              className="text-white focus:outline-none"
+              onClick={toggleMenu}
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -40,10 +39,22 @@ const Header = () => {
               </svg>
             </button>
           </div>
+          <div className={`md:flex ${isMenuOpen ? "block" : "hidden"} mt-4 md:mt-0`}>
+            <NavLink href="/" title="Home" />
+            <NavLink href="/courses" title="Courses" />
+            <NavLink href="/about" title="About Us" />
+            <NavLink href="/contact" title="Contact Us" />
+          </div>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Header
+const NavLink = ({ href, title }) => (
+  <Link href={href} passHref legacyBehavior>
+    <a className="text-gray-300 hover:text-white block mt-4 md:inline-block md:mt-0 md:ml-4">{title}</a>
+  </Link>
+);
+
+export default Header;
