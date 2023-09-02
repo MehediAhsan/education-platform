@@ -8,10 +8,22 @@ const CoursePage =  async({params: {id}}) => {
     return course;
     }
   const {course} = await fetchCourse();
-  const {title} = course;
+  const {title, description, image} = course;
     
   return (
-    <div>CoursePage{title}</div>
+    <div className='flex justify-between p-20'>
+        <div >
+          <img className='h-96' src={image} alt="" />
+        </div>
+        <div>
+          <h1 className='text-2xl font-semibold mb-8'>{title}</h1>
+          <p>{description}</p>
+          <div className='flex justify-end items-end'>
+            <button className='bg-blue-500 hover:bg-blue-600 p-2 rounded mt-20'>Enroll Now</button>
+          </div>
+        </div>
+
+    </div>
   )
 }
 
