@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Link from "next/link"
 import Events from './components/Events';
+import PartnersSection from './components/PartnersSection';
 
 const HomePage = () => {
   const bannerSlides = [
@@ -191,6 +192,8 @@ const HomePage = () => {
 </section>
 
 <Events></Events>
+
+<PartnersSection></PartnersSection>
 
     <div className="container mx-auto py-12">
         <section className="bg-white shadow-md rounded-lg p-8">
