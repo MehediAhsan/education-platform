@@ -15,19 +15,19 @@ const AboutPage = () => {
           </p>
         </section>
 
-        <section className="mt-8 border border-blue-500 text-white p-12 rounded-lg text-center">
+        <section className="mt-8 border border-gray-500 text-white p-12 rounded-lg text-center">
           <h2 className="text-3xl font-semibold mb-4">Our Mission</h2>
           <p className="text-lg leading-relaxed">
             We strive to make education accessible to everyone, breaking down barriers and enabling lifelong learning. Our mission is to empower individuals with knowledge and skills that lead to personal growth and success.
           </p>
         </section>
 
-        <section className="mt-8 border border-blue-800 text-white py-12 rounded-lg text-center">
+        <section className="mt-8 border border-gray-800 text-white py-12 rounded-lg text-center">
           <h2 className="text-3xl font-semibold mb-4">Join Us Today</h2>
           <p className="text-lg leading-relaxed">
             Whether you're a student, professional, or simply curious, EduConnect has something for you. Join our community of learners and embark on a journey of discovery and achievement.
           </p>
-          <button className="mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300">
+          <button className="mt-6 bg-gray-500 hover:bg-gray-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300">
             Explore Courses
           </button>
         </section>

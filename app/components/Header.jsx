@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-blue-500 py-4 shadow-lg text-white">
+    <nav className="bg-gray-800 py-4 shadow-lg text-white">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <Link href="/" passHref legacyBehavior>

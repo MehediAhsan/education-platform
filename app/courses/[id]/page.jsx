@@ -19,7 +19,7 @@ const CoursePage =  async({params: {id}}) => {
           <h1 className='text-2xl font-semibold mb-8'>{title}</h1>
           <p>{description}</p>
           <div className='flex justify-end items-end'>
-            <button className='bg-blue-500 hover:bg-blue-600 p-2 rounded mt-20'>Enroll Now</button>
+            <button className='bg-gray-500 hover:bg-gray-600 p-2 rounded mt-20'>Enroll Now</button>
           </div>
         </div>
 

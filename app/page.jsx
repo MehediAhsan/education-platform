@@ -2,6 +2,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Link from "next/link"
+import Events from './components/Events';
 
 const HomePage = () => {
   const bannerSlides = [
@@ -106,7 +107,7 @@ const HomePage = () => {
                 <p className="text-lg md:text-xl max-w-lg mx-auto mb-6 text-center">
                   {slide.description}
                 </p>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300">
+                <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300">
                   <Link href="/courses">Explore Courses</Link>
                 </button>
               </div>
@@ -126,7 +127,7 @@ const HomePage = () => {
                 <img src={course.image} alt={course.title} className="w-full h-48 object-cover mb-4 rounded-lg" />
                 <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-600">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+                <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
                   Learn More
                 </button>
               </div>
@@ -188,6 +189,8 @@ const HomePage = () => {
     {/* ... Add more features ... */}
   </div>
 </section>
+
+<Events></Events>
 
     <div className="container mx-auto py-12">
         <section className="bg-white shadow-md rounded-lg p-8">

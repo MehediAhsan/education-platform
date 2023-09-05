@@ -9,7 +9,7 @@ const ContactPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center">
           <div>
             <img
-              src="https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139103.jpg"
+              src="https://img.freepik.com/free-photo/top-view-gray-monday-concept-composition-with-telephone_23-2149139103.jpg"
               alt="Contact"
               className="w-full rounded-lg shadow-md"
             />
@@ -24,7 +24,7 @@ const ContactPage = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-500 text-black"
                   required
                 />
               </div>
@@ -36,7 +36,7 @@ const ContactPage = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-500 text-black"
                   required
                 />
               </div>
@@ -48,13 +48,13 @@ const ContactPage = () => {
                   id="message"
                   name="message"
                   rows="6"
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 text-black"
+                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-500 text-black"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300"
+                className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300"
               >
                 Send Message
               </button>

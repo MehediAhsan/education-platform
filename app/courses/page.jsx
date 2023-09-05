@@ -39,7 +39,7 @@ const CoursesPage = async () => {
               <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-700">{course.title}</h3>
               <p className="text-gray-600 mb-4">{course.description}</p>
               <Link href={`/courses/${course.id}`} legacyBehavior>
-                <a className="bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+                <a className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
                   Learn More
                 </a>
               </Link>
