@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-blue-900 py-4 shadow-lg">
+    <nav className="bg-blue-500 py-4 shadow-lg text-white">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <Link href="/" passHref legacyBehavior>
@@ -53,7 +53,7 @@ const Header = () => {
 
 const NavLink = ({ href, title }) => (
   <Link href={href} passHref legacyBehavior>
-    <a className="text-gray-300 hover:text-white block mt-4 md:inline-block md:mt-0 md:ml-4">{title}</a>
+    <a className="text-gray-100 hover:text-white block mt-4 md:inline-block md:mt-0 md:ml-4">{title}</a>
   </Link>
 );
 
