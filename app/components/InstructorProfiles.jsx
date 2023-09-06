@@ -16,6 +16,12 @@ const InstructorProfiles = () => {
       bio: 'Jane is an enthusiastic historian with a deep love for sharing the stories of the past.',
       imageSrc: 'https://media.licdn.com/dms/image/C5603AQEZRRyun4ZGCA/profile-displayphoto-shrink_800_800/0/1655800643268?e=2147483647&v=beta&t=UgSkCmnPdsOOG5F5E_Pnb2r8vGc05pr5YdcPScFpV1w', // Replace with actual image source
     },
+    {
+      name: 'Jane Jocky',
+      credentials: 'M.A. in Chamestry',
+      bio: 'Jane is an enthusiastic historian with a deep love for sharing the stories of the past.',
+      imageSrc: 'https://media.licdn.com/dms/image/C5603AQEZRRyun4ZGCA/profile-displayphoto-shrink_800_800/0/1655800643268?e=2147483647&v=beta&t=UgSkCmnPdsOOG5F5E_Pnb2r8vGc05pr5YdcPScFpV1w', // Replace with actual image source
+    },
     // Add more instructors as needed
   ];
 
@@ -34,8 +40,8 @@ const InstructorProfiles = () => {
               className="w-32 h-32 mx-auto rounded-full mb-4"
             />
             <h2 className="text-xl font-semibold mb-2">{instructor.name}</h2>
-            <p className="text-gray-600 text-sm mb-2">{instructor.credentials}</p>
-            <p className="text-gray-700">{instructor.bio}</p>
+            <p className="text-gray-100 text-sm mb-2">{instructor.credentials}</p>
+            <p className="text-gray-100">{instructor.bio}</p>
           </div>
         ))}
       </div>
