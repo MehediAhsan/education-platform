@@ -4,6 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Link from "next/link"
 import Events from './components/Events';
 import PartnersSection from './components/PartnersSection';
+import InstructorProfiles from './components/InstructorProfiles';
 
 const HomePage = () => {
   const bannerSlides = [
@@ -253,17 +254,7 @@ const HomePage = () => {
         </section>
       </div>
 
-      <div className='mt-10'>
-        <h1 className='text-4xl text-center font-bold mb-10'>Our Trainers</h1>
-      <div className='grid grid-cols-1 md:grid-cols-4 gap-10 container mx-auto' >
-        {
-          trainers.map(trainer => <div className='w-52 h-44 mx-auto flex flex-col justify-center items-center border rounded'>
-            <img src={trainer.img} alt="" className='rounded' />
-            <h1 className='text-xl text-center py-1'>{trainer.name}</h1>
-          </div>)
-        }
-      </div>
-      </div>
+      <InstructorProfiles></InstructorProfiles>
       </main>
     </div>
   )
