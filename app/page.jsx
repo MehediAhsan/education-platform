@@ -5,6 +5,7 @@ import Link from "next/link"
 import Events from './components/Events';
 import PartnersSection from './components/PartnersSection';
 import InstructorProfiles from './components/InstructorProfiles';
+import Infographics from './components/Infographics';
 
 const HomePage = () => {
   const bannerSlides = [
@@ -255,6 +256,8 @@ const HomePage = () => {
       </div>
 
       <InstructorProfiles></InstructorProfiles>
+
+      <Infographics></Infographics>
       </main>
     </div>
   )
