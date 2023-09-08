@@ -2,9 +2,9 @@ import React from 'react'
 
 const UpcomingEvents = () => {
   return (
-    <div class="bg-gray-100 py-12">
+    <div class="py-12">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-semibold text-gray-800 mb-6">Upcoming Events and Webinars</h2>
+    <h2 class="text-3xl font-semibold mb-14 text-center">Upcoming Events and Webinars</h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
