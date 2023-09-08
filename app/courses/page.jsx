@@ -4,7 +4,7 @@
 import Link from "next/link";
 
 async function fetchCourses(){
-  const response = await fetch("http://localhost:3000/api/courses")
+  const response = await fetch("http://127.0.0.1:3000/api/courses")
   const courses = await response.json();
   return courses;
 }
@@ -14,7 +14,7 @@ const CoursesPage = async () => {
       // const [searchTerm, setSearchTerm] = useState('');
 
       const courses = await fetchCourses();
-      console.log(courses);
+      // console.log(courses);
 
   // const filteredCourses = courses.filter(course =>
   //   course.title.toLowerCase().includes(searchTerm.toLowerCase())
