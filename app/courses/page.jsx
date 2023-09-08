@@ -4,7 +4,7 @@
 import Link from "next/link";
 
 async function fetchCourses(){
-  const response = await fetch("http://127.0.0.1:3000/api/courses")
+  const response = await fetch("https://educonnect199811.vercel.app/api/courses")
   const courses = await response.json();
   return courses;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 const CoursePage =  async({params: {id}}) => {
     
   async function fetchCourse(){
-    const response = await fetch(`http://127.0.0.1:3000/api/courses/${id}`)
+    const response = await fetch(`https://educonnect199811.vercel.app/api/courses/${id}`)
     const course = await response.json();
     return course;
     }
