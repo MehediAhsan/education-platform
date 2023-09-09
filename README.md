@@ -1,6 +1,6 @@
 ## EduConnect 
 
-### Online educational platform for learning purpose
+### Online educational platform for learning purpose.
 
 
 
