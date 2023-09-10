@@ -113,7 +113,7 @@ const HomePage = () => {
                   {slide.description}
                 </p>
                 <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300">
-                  <Link href="/courses">Explore Courses</Link>
+                  {/* <Link href="/courses">Explore Courses</Link> */}
                 </button>
               </div>
             </div>
