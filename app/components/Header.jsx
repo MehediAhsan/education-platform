@@ -41,7 +41,7 @@ const Header = () => {
           </div>
           <div className={`md:flex ${isMenuOpen ? "block" : "hidden"} mt-4 md:mt-0`}>
             <NavLink href="/" title="Home" />
-            <NavLink href="/courses" title="Courses" />
+            {/* <NavLink href="/courses" title="Courses" /> */}
             <NavLink href="/about" title="About Us" />
             <NavLink href="/contact" title="Contact Us" />
           </div>
