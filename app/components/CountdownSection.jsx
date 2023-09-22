@@ -33,7 +33,7 @@ function CountdownSection() {
   return (
     <div className=" text-white p-4">
       <div className="text-3xl font-semibold text-center">Enrollment Deadline Countdown</div>
-      <div className="text-4xl font-bold border p-10 text-center mt-10 transition duration-500 hover:scale-105 rounded">{countdown}</div>
+      <div className="text-4xl font-bold border p-10 text-center mt-10 transition duration-500 hover:scale-105 rounded shadow-md shadow-slate-600">{countdown}</div>
     </div>
   );
 }
