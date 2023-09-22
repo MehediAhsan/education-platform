@@ -8,6 +8,7 @@ import InstructorProfiles from './components/InstructorProfiles';
 import Infographics from './components/Infographics';
 import InteractiveLearningToolsSection from './components/InteractiveLearningToolsSection';
 import UpcomingEvents from './components/UpcomingEvents';
+import CountdownSection from './components/CountdownSection';
 
 const HomePage = () => {
   const bannerSlides = [
@@ -260,6 +261,8 @@ const HomePage = () => {
       <InstructorProfiles></InstructorProfiles>
 
       <Infographics></Infographics>
+
+      <CountdownSection></CountdownSection>
 
       <InteractiveLearningToolsSection></InteractiveLearningToolsSection>
 
