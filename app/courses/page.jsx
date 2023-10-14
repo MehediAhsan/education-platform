@@ -38,10 +38,10 @@ const CoursesPage = async () => {
             <div className="p-4">
               <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-700">{course.title}</h3>
               <p className="text-gray-600 mb-4">{course.description}</p>
-              <Link href={`/courses/${course.id}`} legacyBehavior>
-                <a className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+              <Link href={`/courses/${course.id}`} className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+                
                   Learn More
-                </a>
+               
               </Link>
             </div>
           </div>
