@@ -1,18 +1,18 @@
 
 import Link from "next/link";
 
-// async function getCourses(){
-//   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/courses`)
-//   const courses = await response.json();
-//   return courses;
-// }
+async function getCourses(){
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/courses`)
+  const courses = await response.json();
+  return courses;
+}
 
 const CoursesPage = async () => {
     
       
 
-      // const courses = await getCourses();
-      // console.log(courses);
+      const courses = await getCourses();
+      
 
  
   return (
@@ -20,7 +20,7 @@ const CoursesPage = async () => {
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
         Explore Our Courses
       </h1>
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {courses.map((course, index) => (
           <div
             key={index}
@@ -42,7 +42,7 @@ const CoursesPage = async () => {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   )
 }
