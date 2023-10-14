@@ -1,9 +1,7 @@
-// 'use client';
-// import { useState } from "react";
-// import { FaSearch } from 'react-icons/fa';
+
 import Link from "next/link";
 
-async function fetchCourses(){
+async function getCourses(){
   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/courses`)
   const courses = await response.json();
   return courses;
@@ -11,17 +9,15 @@ async function fetchCourses(){
 
 const CoursesPage = async () => {
     
-      // const [searchTerm, setSearchTerm] = useState('');
+      
 
-      // const courses = await fetchCourses();
+      const courses = await getCourses();
       // console.log(courses);
 
-  // const filteredCourses = courses.filter(course =>
-  //   course.title.toLowerCase().includes(searchTerm.toLowerCase())
-  // );
+ 
   return (
     <div className="container mx-auto py-12">
-      {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
         Explore Our Courses
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -46,7 +42,7 @@ const CoursesPage = async () => {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   )
 }
