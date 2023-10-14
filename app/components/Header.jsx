@@ -35,7 +35,7 @@ const Header = () => {
             <div className="flex items-center justify-between px-14 py-7">
                 <div className="flex justify-center items-center text-2xl font-semibold gap-3">
                     <FaBookOpen className="text-teal-500 text-3xl"></FaBookOpen>
-                    <Link href="/" legacyBehavior><h1 className="font-semibold font-sans italic cursor-pointer">EduConnect</h1></Link>
+                    <Link href="/" ><h1 className="font-semibold font-sans italic cursor-pointer">EduConnect</h1></Link>
                 </div>
                 <div>
                     <div onClick={() => setOpen(!open)} className="md:hidden absolute top-8 right-10 text-xl">
@@ -47,7 +47,7 @@ const Header = () => {
                         {
                             Menus.map(Menu => <li key={Menu.name} className="flex justify-center items-center gap-1 md:ml-6 my-6 md:my-0 transition duration-300 hover:text-teal-500 font-medium">
                                 <span className="text-xl text-teal-500">{Menu.icon}</span>
-                               <Link href={Menu.link} legacyBehavior>{Menu.name}</Link> 
+                               <Link href={Menu.link}>{Menu.name}</Link> 
                             </li>)
                         }
                     </ul>
