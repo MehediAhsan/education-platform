@@ -13,7 +13,7 @@ const CoursesPage = async () => {
     
       // const [searchTerm, setSearchTerm] = useState('');
 
-      const courses = await fetchCourses();
+      // const courses = await fetchCourses();
       // console.log(courses);
 
   // const filteredCourses = courses.filter(course =>
@@ -21,7 +21,7 @@ const CoursesPage = async () => {
   // );
   return (
     <div className="container mx-auto py-12">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
+      {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-center">
         Explore Our Courses
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -46,7 +46,7 @@ const CoursesPage = async () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
