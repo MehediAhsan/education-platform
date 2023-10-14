@@ -2,13 +2,13 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Link from "next/link"
-import Events from './components/Events';
-import PartnersSection from './components/PartnersSection';
-import InstructorProfiles from './components/InstructorProfiles';
-import Infographics from './components/Infographics';
-import InteractiveLearningToolsSection from './components/InteractiveLearningToolsSection';
-import UpcomingEvents from './components/UpcomingEvents';
-import CountdownSection from './components/CountdownSection';
+import Events from "../components/Events";
+import PartnersSection from "../components/PartnersSection";
+import InstructorProfiles from "../components/InstructorProfiles";
+import Infographics from "../components/Infographics";
+import InteractiveLearningToolsSection from "../components/InteractiveLearningToolsSection";
+import UpcomingEvents from "../components/UpcomingEvents";
+import CountdownSection from "../components/CountdownSection";
 
 const HomePage = () => {
   const bannerSlides = [
