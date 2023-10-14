@@ -1,13 +1,14 @@
 import React from 'react'
-
+async function fetchCourse(id){
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/courses/${id}`)
+  const course = await response.json();
+  return course;
+  }
 const CoursePage =  async({params: {id}}) => {
     
-  async function fetchCourse(){
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/courses/${id}`)
-    const course = await response.json();
-    return course;
-    }
-  const {course} = await fetchCourse();
+  
+  const course = await fetchCourse(id);
+
   const {title, description, image} = course;
     
   return (
