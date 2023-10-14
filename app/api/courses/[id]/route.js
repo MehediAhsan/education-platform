@@ -5,5 +5,5 @@ export async function GET(request, {params}) {
     const courses = require('../data.json'); // Adjust the path as needed
     const course = courses.find(course => course.id === id);
   console.log(course)
-    return NextResponse.json(course )
+    return NextResponse.json(course)
 }
