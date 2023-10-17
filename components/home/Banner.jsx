@@ -27,14 +27,14 @@ const Banner = () => {
           {bannerSlides.map((slide, index) => (
             <div className='h-screen md:min-h-screen' key={index}>
               <img className="h-screen md:min-h-screen" src={slide.image} alt={`Slide ${index}`} />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-70">
+              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-lime-950 bg-opacity-60">
                 <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-center">
                   {slide.title}
                 </h1>
                 <p className="text-lg md:text-xl max-w-lg mx-auto mb-6 text-center">
                   {slide.description}
                 </p>
-                <button className="bg-teal-600 hover:bg-teal-700 text-white text-lg md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+                <button className="bg-teal-600 hover:bg-teal-700 text-white text-xl md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
                   <Link href="/courses">Explore Courses</Link>
                 </button>
                 <div className="flex gap-2 text-2xl pt-6 justify-center items-center">

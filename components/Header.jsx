@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import { useState } from "react";
-import { FaHome, FaEnvelope, FaBook, FaTimes, FaBars, FaBookOpen } from "react-icons/fa";
+import { FaHome, FaEnvelope, FaBook, FaTimes, FaBars, FaBookOpen, FaEyeDropper } from "react-icons/fa";
 
 const Header = () => {
   const Menus = [
@@ -23,7 +23,7 @@ const Header = () => {
         {
             name: 'About', 
             link:'/about',
-            icon: <></>
+            icon: <FaEyeDropper></FaEyeDropper>
         },
 
     ]
@@ -50,6 +50,9 @@ const Header = () => {
                                <Link href={Menu.link}>{Menu.name}</Link> 
                             </li>)
                         }
+                        <div className="bg-teal-500">
+                            <button className=" p-2 text-xl font-medium rounded">Login</button>
+                        </div>
                     </ul>
                 </div>
             </div>
