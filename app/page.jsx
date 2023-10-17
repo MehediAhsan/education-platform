@@ -9,25 +9,10 @@ import Infographics from "../components/Infographics";
 import InteractiveLearningToolsSection from "../components/InteractiveLearningToolsSection";
 import UpcomingEvents from "../components/UpcomingEvents";
 import CountdownSection from "../components/CountdownSection";
+import Banner from "@/components/Banner";
 
 const HomePage = () => {
-  const bannerSlides = [
-    {
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      title: 'Find your best course',
-      description: 'Elevate your skills with our online courses.',
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      title: 'Diverse Course Selection',
-      description: 'Expand your knowledge in various fields.',
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1588912914078-2fe5224fd8b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      title: 'Flexible Learning',
-      description: 'Learn at your own pace, anytime, anywhere.',
-    },
-  ];
+  
 
   const featuredCourses = [
     {
@@ -99,102 +84,79 @@ const HomePage = () => {
   ]
   return (
     <div>
+
+      <Banner></Banner>
       
-      <div>
-      <div className="relative">
-        <Carousel showThumbs={false} infiniteLoop autoPlay interval={5000}>
-          {bannerSlides.map((slide, index) => (
-            <div className='h-screen' key={index}>
-              <img src={slide.image} alt={`Slide ${index}`} />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-center">
-                  {slide.title}
-                </h1>
-                <p className="text-lg md:text-xl max-w-lg mx-auto mb-6 text-center">
-                  {slide.description}
-                </p>
-                <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300">
-                  <Link href="/courses">Explore Courses</Link>
-                </button>
-              </div>
+      <section className="py-20">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-10 text-center">
+          Featured Courses
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {featuredCourses.map((course, index) => (
+            <div key={index} className="bg-white shadow-md p-6 rounded-lg">
+              <img src={course.image} alt={course.title} className="w-full h-48 object-cover mb-4 rounded-lg" />
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-600">{course.title}</h3>
+              <p className="text-gray-600 mb-4">{course.description}</p>
+              <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+                Learn More
+              </button>
             </div>
           ))}
-        </Carousel>
-      </div>
-
+        </div>
+      </section>
       
-        <section className="py-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-10 text-center">
-            Featured Courses
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {featuredCourses.map((course, index) => (
-              <div key={index} className="bg-white shadow-md p-6 rounded-lg">
-                <img src={course.image} alt={course.title} className="w-full h-48 object-cover mb-4 rounded-lg" />
-                <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-600">{course.title}</h3>
-                <p className="text-gray-600 mb-4">{course.description}</p>
-                <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
-                  Learn More
-                </button>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
-
       <main className="container mx-auto py-12">
         
-
-      <section className="border text-white py-16 rounded-lg text-center mb-20">
-  <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">
-    Why Choose EduConnect?
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div className="flex flex-col items-center transition duration-300 transform hover:scale-105">
-      <img
-        src="https://images.unsplash.com/photo-1556775865-b9a2234f9c6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-        alt="Expert Instructors"
-        className="w-16 h-16 mb-4 rounded-full"
-      />
-      <h3 className="text-xl md:text-2xl font-semibold mb-2">
-        Expert Instructors
-      </h3>
-      <p className="text-gray-300">
-        Learn from industry experts and experienced educators in your field of
-        interest.
-      </p>
-    </div>
-    <div className="flex flex-col items-center mt-8 md:mt-0 transition duration-300 transform hover:scale-105">
-      <img
-        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-        alt="Interactive Learning"
-        className="w-16 h-16 mb-4 rounded-full"
-      />
-      <h3 className="text-xl md:text-2xl font-semibold mb-2">
-        Interactive Learning
-      </h3>
-      <p className="text-gray-300">
-        Engage in interactive quizzes, assignments, and discussions to reinforce
-        your learning.
-      </p>
-    </div>
-    <div className="flex flex-col items-center mt-8 md:mt-0 transition duration-300 transform hover:scale-105">
-      <img
-        src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-        alt="Flexible Schedule"
-        className="w-16 h-16 mb-4 rounded-full"
-      />
-      <h3 className="text-xl md:text-2xl font-semibold mb-2">
-        Flexible Schedule
-      </h3>
-      <p className="text-gray-300">
-        Learn at your own pace with our on-demand courses, fitting your busy
-        lifestyle.
-      </p>
-    </div>
-    {/* ... Add more features ... */}
-  </div>
-</section>
+        <section className="border text-white py-16 rounded-lg text-center mb-20">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">
+            Why Choose EduConnect?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center transition duration-300 transform hover:scale-105">
+              <img
+                src="https://images.unsplash.com/photo-1556775865-b9a2234f9c6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                alt="Expert Instructors"
+                className="w-16 h-16 mb-4 rounded-full"
+              />
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Expert Instructors
+              </h3>
+              <p className="text-gray-300">
+                Learn from industry experts and experienced educators in your field of
+                interest.
+              </p>
+            </div>
+            <div className="flex flex-col items-center mt-8 md:mt-0 transition duration-300 transform hover:scale-105">
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                alt="Interactive Learning"
+                className="w-16 h-16 mb-4 rounded-full"
+              />
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Interactive Learning
+              </h3>
+              <p className="text-gray-300">
+                Engage in interactive quizzes, assignments, and discussions to reinforce
+                your learning.
+              </p>
+            </div>
+            <div className="flex flex-col items-center mt-8 md:mt-0 transition duration-300 transform hover:scale-105">
+              <img
+                src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                alt="Flexible Schedule"
+                className="w-16 h-16 mb-4 rounded-full"
+              />
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Flexible Schedule
+              </h3>
+              <p className="text-gray-300">
+                Learn at your own pace with our on-demand courses, fitting your busy
+                lifestyle.
+              </p>
+            </div>
+            {/* ... Add more features ... */}
+          </div>
+        </section>
 
 <Events></Events>
 
