@@ -22,12 +22,22 @@ const Banner = () => {
         },
       ];
   return (
-    <div className="relative">
-        <Carousel showThumbs={false} infiniteLoop autoPlay interval={2000} showStatus={false} showIndicators={false}>
+    <div className="w-full relative">
+        <Carousel showArrows={true}
+      infiniteLoop={true}
+      showThumbs={false}
+      showStatus={false}
+      autoPlay={true}
+      interval={3000} // Change the interval as needed
+      stopOnHover={false}
+      dynamicHeight={true}
+      emulateTouch={true}
+      useKeyboardArrows={true}
+      swipeable={true}>
           {bannerSlides.map((slide, index) => (
-            <div className='h-screen md:min-h-screen' key={index}>
+            <div key={index}>
               <img className="h-screen md:min-h-screen" src={slide.image} alt={`Slide ${index}`} />
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-lime-950 bg-opacity-60">
+              <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-60">
                 <h1 className="text-4xl md:text-5xl font-semibold mb-4 text-center">
                   {slide.title}
                 </h1>
