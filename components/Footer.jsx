@@ -1,7 +1,19 @@
 import { FaFacebookSquare, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa';
+import Wave from 'react-wavify'
 
 const Footer = () => {
   return (
+    <>
+    <Wave fill='#111827'
+        paused={false}
+        style={{ display: 'flex' }}
+        options={{
+          height: 100,
+          amplitude: 30,
+          speed: 0.15,
+          points: 3
+        }}
+  />
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left mb-6 md:mb-0">
@@ -51,6 +63,7 @@ const Footer = () => {
         <p>&copy; 2023 EduConnect. All rights reserved.</p>
       </div>
     </footer>
+    </>
   );
 };
 
