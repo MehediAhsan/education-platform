@@ -17,6 +17,7 @@
     "react-icons": "^4.10.1",
     "react-responsive-carousel": "^3.2.23",
     "react-wavify": "^1.9.0",
+    "swiper": "^10.3.1",
     "tailwindcss": "3.3.3"
   }
 }
