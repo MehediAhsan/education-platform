@@ -44,7 +44,7 @@ const FeaturedCourses = () => {
 
   return (
     <section className="py-20">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-10 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-1 text-center">
           Featured Courses
         </h2>
         <Swiper
@@ -71,11 +71,11 @@ const FeaturedCourses = () => {
         className="mySwiper"
       >
           {featuredCourses.map((course, index) => (
-            <SwiperSlide key={index} className="shadow-md p-6 rounded-lg h-full border-2 border-teal-500 bg-teal-100 cursor-pointer">
-              <img src={course.image} alt={course.title} className="w-full block h-48 object-cover mb-4 rounded-lg" />
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-600">{course.title}</h3>
-              <p className="text-gray-600 mb-4">{course.description}</p>
-              <button className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300">
+            <SwiperSlide key={index} className="shadow-md p-6 rounded-lg h-full border-2 border-teal-500 bg-slate-950 cursor-pointer my-14">
+              <img src={course.image} alt={course.title} className="w-full block h-48 object-cover mb-4 rounded-lg skew-y-3 transform transition duration-300 hover:skew-y-0" />
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-200">{course.title}</h3>
+              <p className="text-gray-200 mb-4">{course.description}</p>
+              <button className="bg-teal-500 hover:bg-teal-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300 -skew-y-3 transform">
                 Learn More
               </button>
             </SwiperSlide>
