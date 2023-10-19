@@ -11,7 +11,7 @@ const InteractiveLearningToolsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Tool 1: Gamified Quizzes */}
           <div className="bg-white rounded-lg shadow-md p-6">
-            <FaGamepad className="text-4xl text-blue-500 mb-4" />
+            <FaGamepad className="text-4xl text-teal-500 mb-4" />
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               Gamified Quizzes
             </h3>
@@ -22,7 +22,7 @@ const InteractiveLearningToolsSection = () => {
 
           {/* Tool 2: Virtual Labs */}
           <div className="bg-white rounded-lg shadow-md p-6">
-            <FaFlask className="text-4xl text-blue-500 mb-4" />
+            <FaFlask className="text-4xl text-teal-500 mb-4" />
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               Virtual Labs
             </h3>
@@ -33,7 +33,7 @@ const InteractiveLearningToolsSection = () => {
 
           {/* Tool 3: AI-powered Tutors */}
           <div className="bg-white rounded-lg shadow-md p-6">
-            <FaRobot className="text-4xl text-blue-500 mb-4" />
+            <FaRobot className="text-4xl text-teal-500 mb-4" />
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               AI-powered Tutors
             </h3>

@@ -9,7 +9,6 @@ import Banner from "@/components/home/Banner";
 import FeaturedCourses from '@/components/home/FeaturedCourses';
 import ChooseEduConnect from '@/components/home/ChooseEduConnect';
 import StudentsSay from '@/components/home/StudentsSay';
-import UpcomingEvents from "@/components/UpcomingEvents";
 
 const HomePage = () => {
   
@@ -35,8 +34,6 @@ const HomePage = () => {
       <CountdownSection></CountdownSection>
 
       <InteractiveLearningToolsSection></InteractiveLearningToolsSection>
-
-      <UpcomingEvents></UpcomingEvents>
       
     </div>
   )
