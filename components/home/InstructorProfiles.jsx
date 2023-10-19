@@ -27,17 +27,17 @@ const InstructorProfiles = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-semibold mb-14 text-center">Our Expert Instructors</h1>
+      <h1 className="text-3xl md:text-4xl font-semibold mb-14 text-center">Our Expert Instructors</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {instructors.map((instructor, index) => (
           <div
             key={index}
-            className="p-4 border border-gray-200 rounded-lg shadow-md mb-4"
+            className="p-4 rounded-lg shadow-sm shadow-teal-500 mb-4 text-center cursor-pointer"
           >
             <img
               src={instructor.imageSrc}
               alt={instructor.name}
-              className="w-32 h-32 mx-auto rounded-full mb-4"
+              className="w-32 h-32 mx-auto rounded-full mb-4 shadow-md shadow-teal-300"
             />
             <h2 className="text-xl font-semibold mb-2">{instructor.name}</h2>
             <p className="text-gray-100 text-sm mb-2">{instructor.credentials}</p>

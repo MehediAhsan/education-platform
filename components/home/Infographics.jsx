@@ -37,9 +37,9 @@ const Infographics = () => {
           {infographicData.map((item, index) => (
             <div
               key={index}
-              className="p-4  rounded-lg shadow-lg flex flex-col items-center"
+              className="p-4  rounded-lg shadow-lg flex flex-col gap-3 items-center"
             >
-              {item.icon}
+              <span className='text-teal-500'>{item.icon}</span>
               <h3 className="text-xl font-semibold">{item.title}</h3>
               <p className="text-3xl font-bold mt-2">{item.value}</p>
             </div>
