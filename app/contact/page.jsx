@@ -21,7 +21,7 @@ const ContactPage = () => {
             <p className="bg-gray-900 text-center uppercase p-10 w-11/12 mx-auto -skew-x-3">1234 5878 4544</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center mx-10">
           <div>
             <img
               src="https://img.freepik.com/free-photo/top-view-gray-monday-concept-composition-with-telephone_23-2149139103.jpg"
@@ -32,7 +32,7 @@ const ContactPage = () => {
           <div>
             <form className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-gray-600 font-semibold mb-1">
+                <label htmlFor="name" className="block text-gray-300 font-semibold mb-1">
                   Your Name
                 </label>
                 <input
@@ -44,7 +44,7 @@ const ContactPage = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-gray-600 font-semibold mb-1">
+                <label htmlFor="email" className="block text-gray-300 font-semibold mb-1">
                   Email Address
                 </label>
                 <input
@@ -56,7 +56,7 @@ const ContactPage = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-gray-600 font-semibold mb-1">
+                <label htmlFor="message" className="block text-gray-300 font-semibold mb-1">
                   Message
                 </label>
                 <textarea
@@ -69,7 +69,7 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
-                className="bg-gray-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-6 py-3 rounded-lg transition duration-300"
+                className="bg-teal-500 hover:bg-gray-600 text-white text-sm md:text-base font-semibold px-4 py-2 rounded-lg transition duration-300"
               >
                 Send Message
               </button>
