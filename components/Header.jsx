@@ -50,10 +50,10 @@ const Header = () => {
                                <Link href={Menu.link}>{Menu.name}</Link> 
                             </li>)
                         }
-                        <div className="flex justify-center items-center md:ml-6 relative">
+                        <Link href="/login" className="flex justify-center items-center md:ml-6 relative">
                             <button className="border border-teal-600 px-4 py-1 text-lg font-medium rounded hover:bg-teal-600 transition duration-300">Login</button>
                             <div className="bg-teal-600 absolute w-2 inset-0"></div>
-                        </div>
+                        </Link>
                     </ul>
                 </div>
             </div>
