@@ -12,6 +12,10 @@ const SignUpPage = () => {
       <div className="absolute inset-0 top-44 w-4/12 mx-auto shadow-md shadow-teal-200 rounded">
       <form action="" className="w-9/12 mx-auto p-8 flex flex-col gap-6">
             <div>
+                <legend className="text-xl mb-4">Name :</legend>
+                <input type="text" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" />
+            </div>
+            <div>
                 <legend className="text-xl mb-4">Email :</legend>
                 <input type="email" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" />
             </div>
@@ -19,9 +23,8 @@ const SignUpPage = () => {
                 <legend className="text-xl mb-4">Password :</legend>
                 <input type="password" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" />
             </div>
-            <button className="bg-teal-500 hover:bg-teal-600 w-20 p-2 rounded text-lg">Login</button>
-            <p className="text-center text-teal-500 text-2xl">----Or----</p>
-            <button className="flex justify-center items-center gap-2 border-b-2 rounded border-teal-500 transition duration-300 hover:bg-teal-600 py-2 text-lg shadow-sm shadow-teal-500"><span>Login With Google</span> <FaGoogle/></button>
+            <button className="bg-teal-500 hover:bg-teal-600 w-20 p-2 rounded text-lg">SignUp</button>
+            
             <p className="text-center pb-3">Already Register? Please <Link href="/login" className="text-teal-400">Login</Link></p>
         </form>
       </div>
