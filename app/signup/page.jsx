@@ -13,15 +13,15 @@ const SignUpPage = () => {
       <form action="" className="w-9/12 mx-auto p-8 flex flex-col gap-6">
             <div>
                 <legend className="text-xl mb-4">Name :</legend>
-                <input type="text" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" />
+                <input type="text" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" placeholder="Write here..." />
             </div>
             <div>
                 <legend className="text-xl mb-4">Email :</legend>
-                <input type="email" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" />
+                <input type="email" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" placeholder="Write here..." />
             </div>
             <div>
                 <legend className="text-xl mb-4">Password :</legend>
-                <input type="password" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" />
+                <input type="password" className="ml-6 bg-transparent p-2 shadow-sm shadow-white rounded" placeholder="Write here..." />
             </div>
             <button className="bg-teal-500 hover:bg-teal-600 w-20 p-2 rounded text-lg">SignUp</button>
             
