@@ -1,7 +1,7 @@
 import { FaGoogle } from "react-icons/fa"
 import Link from "next/link"
 
-const LoginPage = () => {
+const SignUpPage = () => {
   return (
     <div>
         <div className="relative">
@@ -22,11 +22,11 @@ const LoginPage = () => {
             <button className="bg-teal-500 hover:bg-teal-600 w-20 p-2 rounded text-lg">Login</button>
             <p className="text-center text-teal-500 text-2xl">----Or----</p>
             <button className="flex justify-center items-center gap-2 border-b-2 rounded border-teal-500 transition duration-300 hover:bg-teal-600 py-2 text-lg shadow-sm shadow-teal-500"><span>Login With Google</span> <FaGoogle/></button>
-            <p className="text-center pb-3">Are you new? Please <Link href="/signup" className="text-teal-400">sign up</Link></p>
+            <p className="text-center pb-3">Already Register? Please <Link href="/login" className="text-teal-400">Login</Link></p>
         </form>
       </div>
     </div>
   )
 }
 
-export default LoginPage
+export default SignUpPage
